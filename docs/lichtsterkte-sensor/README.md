@@ -10,13 +10,13 @@ Zoals je in onderstaande grafiek kan zien neemt de weerstandswaarde van de LDR a
 
 ![LDR](./assets/LDR.png)
 
-# Schema
+## Schema
 
 Met onderstaande schema kan de lichtsterkte als een analoge waarde ingelezen worden.
 
 ![Analoge invoer met LDR](./assets/LDR1.png)
 
-# Programma
+## Programma
 
 Het programma is volledig hetzelfde voor de arduino UNO en de ESP8266. Het bovenstaande schema kan enkel aangesloten worden op de analoge ingangen.
 
@@ -31,19 +31,19 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  readValue = analogReadLDRPen); //analoge spanning omzetten naar een getal en bewaren in de variabele readValue
+  readValue = analogRead(LDRPen); //analoge spanning omzetten naar een getal en bewaren in de variabele readValue
   Serial.print("Analoge spanning over LDR: ");
   Serial.println(readValue); //Weergave waarde
   delay(1000);
 }
 ```
 
-# Module
+## Module
 
 Er kan ook gebruikt gemaakt worden van een module. Bij onderstaande model is er zowel een analoge als digitale uitgang. De digitale uitgang kan met een potentiometer ingesteld worden.
 
 ![LDR module](./assets/LDRModule.png)
 
-Het schema van deze module is te raadplegen op: [Drukknopmodule](https://robotdyn.com/light-sensor-with-analog-digital-outs.html)
+Het schema van deze module is te raadplegen op: [site producent RobotDyn](https://robotdyn.com/light-sensor-with-analog-digital-outs.html)
 
-De module kan o.a. aangekocht worden op volgende site: [Drukknopmodule](https://opencircuit.nl/Product/Licht-sensor-module-analoge-digitale-output) 
+De module kan o.a. aangekocht worden op volgende site: [site leverancier opencircuit](https://opencircuit.nl/Product/Licht-sensor-module-analoge-digitale-output) 

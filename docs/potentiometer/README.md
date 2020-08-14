@@ -6,7 +6,7 @@ title: Potentiometer
 
 Met een potentiometer is het mogelijk een analoge ingangsspanning tussen 0 V en de voedingsspanning te genereren.
 
-# Schema
+## Schema
 
 ![Analoge invoer met potentiometer](./assets/analoge_invoer1.png)
 
@@ -15,13 +15,13 @@ Met een potentiometer is het mogelijk een analoge ingangsspanning tussen 0 V en 
 * Bereken de spanning tussen de loper van de potentiometer en de massa wanneer de voedingsspanning 5 V is en de loper op 100 % staat, op 50 % staat en op 0 % staat.
 * Bouw de schakeling op een breadboard en meet de spanning tussen de massa en de loper op verschillende standen. Vergelijk deze waardes met de berekende waardes.
 
-# Arduino UNO
+## Arduino UNO
 
 De analoge ingangen A0 tot en met A5 zijn geschikt om de loper van de potentiometer aan te sluiten.
 
 ![Pinnen geschikt voor analoge invoer](./assets/analoge_invoer.png)
 
-## Programma
+## Programma Arduino UNO
 
 ```cpp
 #define potPen A0
@@ -41,11 +41,11 @@ void loop() {
 }
 ```
 
-# ESP8266
+## ESP8266
 
 Enkel de analoge ingang A0 is geschikt om de loper van de potentimeter aan te sluiten.
 
-## Programma
+## Programma ESP8266
 
 ```cpp
 #define potPen A0

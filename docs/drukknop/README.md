@@ -9,33 +9,36 @@ Met een drukknop is het mogelijk een logische "1" en "0" te creëren aan de inga
 
 ## Schema
 
-Wanneer de drukknop ingedrukt is ontstaat er een gesloten stroomkring en komt de voedingsspanning volledig over de weerstand R1 te staan. Hierdoor onstaat een logische "1" aan de ingang van de arduino ten overstaande van de massa.
-Wanneer de drukknop niet ingedrukt is staat alle spanning over het open contact van de drukknop en staat er geen spanning aan de ingang van de arduino ten overstaande van de massa.
+Wanneer de drukknop ingedrukt is ontstaat er een gesloten stroomkring en komt de voedingsspanning volledig over de weerstand R1 te staan. Hierdoor onstaat een logische "1" aan de ingang van de arduino.
+Wanneer de drukknop niet ingedrukt is staat alle spanning over het open contact van de drukknop en staat er een logische "0" aan de ingang van de arduino.
 
 ![Schakeling met drukknop](./assets/digitale_invoer1.png)
 
 ### Opdrachten
- * Bereken de stroom door de weerstand en de drukknop wanneer de drukknop ingedrukt is en wanneer de drukknop niet ingedrukt is.
- * Bouw de schakeling op een breadboard en meet de spanning over R1 na wanneer de drukknop ingedrukt is en wanneer de drukknop niet ingedrukt is.
+ * Bereken de stroom door de weerstand en de drukknop wanneer de drukknop ingedrukt is.
+ * Bereken de stroom door de weerstand en de drukknop wanneer de drukknop niet ingedrukt is.
+ * Bouw de schakeling op een breadboard en meet de spanning over R1 na wanneer de drukknop ingedrukt is en wanneer de drukknop niet ingedrukt is. Vergelijk deze waardes met de berekende waardes.
 
  ## Aangepast schema
 
- Veronerstel dat je per ongelukt de pin waarop de schakeling aangesloten is programmeert als uitgang in plaats van als ingang. Wat zou er gebeuren wanneer je de een logische "0" plaatst op de pin en de drukknop indrukt?
+ Veronerstel dat je per ongeluk de pin waarop de schakeling aangesloten is programmeert als uitgang in plaats van als ingang. Wat zou er gebeuren wanneer je de een logische "0" plaatst op de pin en de drukknop indrukt?
 
  Een oplossing hiervoor is deze stroom te beperken door weerstand R2 te plaatsen zoals in onderstaande schema.
 
 ![Schakeling met drukknop en beveiligingsweerstand](./assets/digitale_invoer2.png)
 
 ### Opdrachten
- * Bereken de spanning ten overstaande van de digitale ingang. Valt deze nog binnen de waardes gezien in het deel "digitale ingang"
+ * Bereken de spanning tussen de digitale ingang en de massa. (De spanning over weerstand R1). Valt deze nog binnen de waardes gezien in het deel "digitale ingang"
  * Bouw de schakeling op een breadboard en meet de spanning over R1 en R2 na wanneer de drukknop ingedrukt is en wanneer de drukknop niet ingedrukt is. Komen deze waardes overeen met de berekende waardes?
 
+ ## Drukknop module
+ 
 Wanneer je bij een project niet steeds wil gebruik maken van een drukknop en bijhorende weerstanden op een breadbord is volgende module een ideale oplossing.
 
 
 ![Drukknopmodule](./assets/drukknopModule.png)
 
-Meer info over deze module kan je vinden op [Drukknopmodule](https://opencircuit.nl/Product/Drukknop-module-Zwart)
+Meer info over deze module kan je vinden op de site van een leverancier [Opencircuit.nl](https://opencircuit.nl/Product/Drukknop-module-Zwart)
 
 ## Arduino UNO
 

@@ -13,7 +13,17 @@ module.exports = {
       ['/drukknop/', 'drukknop'],
       ['/analoge-invoer/', 'Analoge invoer'],
       ['/potentiometer/', 'Potentiometer'],
-      ['/lichtsterkte-sensor/', 'Lichtsterkte sensor']
+      ['/lichtsterkte-sensor/', 'Lichtsterkte sensor'],
+      ['/optische-afstandssensor/', 'Optische afstandssensor'],
+      ['/digitale-communicatie/', 'digitale communicatie'],
+      ['/ds18b20-temperatuursensor/', 'DS18B20 temperatuursensor'],
+      [
+        '/dht22-temperatuur-en-luchtvochtigheidssensor/',
+        'DHT22 temperatuur- en luchtvochtigheidssensor'
+      ],
+      ['/led/', 'LED'],
+      ['/relais/', 'Relais'],
+      ['/h-brug/', 'H-brug']
     ],
     repo: 'https://github.com/KrisWerbrouck1/Innovet_Sensoren_en_Actuatoren.git',
     docsDir: 'docs',
