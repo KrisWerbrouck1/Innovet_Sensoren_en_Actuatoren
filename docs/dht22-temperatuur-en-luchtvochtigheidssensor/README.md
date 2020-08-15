@@ -58,6 +58,58 @@ void loop()
     delay(10000); //Delay 2 sec.
 }
 ```
+## Probleem met DHT en IOT platform adafruit
+
+De bibliotheek gebruikt in bovenstaande programma komt in conflict met het IOT platform van Adafruit. Een oplossing is het gebruik van een andere bibliotheek, namelijk "DHTesp".
+
+## Voorbeeldprogramma
+
+```cpp
+#include "DHTesp.h"
+
+#ifdef ESP32
+#pragma message(THIS EXAMPLE IS FOR ESP8266 ONLY!)
+#error Select ESP8266 board.
+#endif
+
+DHTesp dht;
+
+void setup()
+{
+  Serial.begin(115200);
+  Serial.println();
+  Serial.println("Status\tHumidity (%)\tTemperature (C)\t(F)\tHeatIndex (C)\t(F)");
+  String thisBoard= ARDUINO_BOARD;
+  Serial.println(thisBoard);
+
+  // Autodetect is not working reliable, don't use the following line
+  // dht.setup(17);
+  // use this instead: 
+  dht.setup(D7, DHTesp::DHT22); // Connect DHT sensor to D7
+}
+
+void loop()
+{
+  delay(dht.getMinimumSamplingPeriod());
+
+  float humidity = dht.getHumidity();
+  float temperature = dht.getTemperature();
+
+  Serial.print(dht.getStatusString());
+  Serial.print("\t");
+  Serial.print(humidity, 1);
+  Serial.print("\t\t");
+  Serial.print(temperature, 1);
+  Serial.print("\t\t");
+  Serial.print(dht.toFahrenheit(temperature), 1);
+  Serial.print("\t\t");
+  Serial.print(dht.computeHeatIndex(temperature, humidity, false), 1);
+  Serial.print("\t\t");
+  Serial.println(dht.computeHeatIndex(dht.toFahrenheit(temperature), humidity, true), 1);
+  delay(2000);
+}
+
+```
 ## Leverancier
 
 De DHT22 is o.a. te koop bij opencircuit [opencircuit.nl](https://opencircuit.nl/Product/DHT22-Luchtvochtigheid-en-temperatuur-sensor) 
