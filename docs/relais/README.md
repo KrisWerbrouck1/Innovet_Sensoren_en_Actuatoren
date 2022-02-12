@@ -18,6 +18,8 @@ In onderstaande schema wordt een ledstrip in- en uitgeschakeld via een relais.
 
 In onderstaand voorbeeldprogramma wordt de spoel van het relais 500 ms bekrachtigd en vervolgens 500 ms niet bekrachtigd in een oneindige lus.
 
+Als voedingsbron wordt in de afbeelding een 9V batterij gebruikt. Dit kan uiteraard ook een andere gelijkspanningsbron of wisselspanningsbron zijn.
+
 ## Voorbeeldprogramma
 
 ```cpp
