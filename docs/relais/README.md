@@ -14,25 +14,18 @@ Wanneer een beperkte stroom door de spoel van het relais vloeit, kan het contact
 
 In onderstaande schema wordt een ledstrip in- en uitgeschakeld via een relais.
 
-![LED strip geschakeld via relais](./assets/LEDStrip.png)
+![DC-motor met relais en Arduino UNO](./assets/relais2.png)
+
+In onderstaand voorbeeldprogramma wordt de spoel van het relais 500 ms bekrachtigd en vervolgens 500 ms niet bekrachtigd in een oneindige lus.
 
 ## Voorbeeldprogramma
 
 ```cpp
-/*
- * Created by ArduinoGetStarted.com
- *
- * This example code is in the public domain
- *
- * Tutorial page: https://arduinogetstarted.com/tutorials/arduino-relay
- */
 
-// constants won't change
-const int RELAY_PIN = 3;  // the Arduino pin, which connects to the IN pin of relay
+const int RELAY_PIN = 12;  // the Arduino pin, which connects to the IN pin of relay
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  // initialize digital pin 9 as an output.
   pinMode(RELAY_PIN, OUTPUT);
 }
 
