@@ -38,7 +38,7 @@ Wanneer je bij een project niet steeds wil gebruik maken van een drukknop en bij
 
 ![Drukknopmodule](./assets/drukknopModule.png)
 
-Meer info over deze module kan je vinden op de site van een leverancier [Opencircuit.nl](https://opencircuit.nl/Product/Drukknop-module-Zwart)
+Meer info over deze module kan je vinden op de site van een leverancier [TinyTronics.nl](https://www.tinytronics.nl/shop/nl/schakelaars/manuele-schakelaars/drukknoppen-en-schakelaars/robotdyn-drukknop-module-blauw)
 
 ## Arduino UNO
 
