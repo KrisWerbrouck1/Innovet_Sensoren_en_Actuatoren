@@ -46,16 +46,20 @@ De pinnen 0 tot en met 13 zijn geschikt als digitale ingang.
 
 ![Pinnen geschikt voor digitale invoer](./assets/digitale_invoer.png)
 
- ### voorbeeldcode arduino UNO
+## Aansluitschema Arduino UNO
+
+![Aansluitschema](./assets/drukknopUNO.png)
+
+ ## Voorbeeldcode arduino UNO
 
  ```cpp
-#define drukknopPin 12
+#define drukknopPin 2
 
 boolean drukknopStatus = false;
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);  //ingebouwde led als uitgang plaatsen
-  pinMode(drukknopPin, INPUT); // pin 12 als ingang plaatsen
+  pinMode(drukknopPin, INPUT); // pin 2 als ingang plaatsen
 }
 
 void loop() {
@@ -75,7 +79,7 @@ De pinnen D0 tot en met D8 zijn geschikt als digitale ingang.
 
 ![Pinnen geschikt voor digitale invoer](./assets/ESP8266Pinlayout.jpg)
 
- ### voorbeeldcode ESP8266
+ ## Voorbeeldcode ESP8266
 
  ```cpp
 # define drukknopPin D0
