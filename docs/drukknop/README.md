@@ -52,6 +52,8 @@ De pinnen 0 tot en met 13 zijn geschikt als digitale ingang.
 
  ## Voorbeeldcode arduino UNO
 
+In onderstaande code licht de ingebouwde led op bij het indrukken van de drukknop via de if else structuur.
+
  ```cpp
 #define drukknopPin 2
 
@@ -71,6 +73,36 @@ void loop() {
     digitalWrite(LED_BUILTIN, LOW);
   }
 }
+```
+
+## Voorbeeldcode arduino UNO
+
+In onderstaande code licht de ingebouwde led op bij het indrukken van 1 drukknop. Wanneer de andere drukknop ingedrukt wordt, licht de led niet meer op.
+
+ ```cpp
+#define buttonAan 2     // drukknop pin Aan
+#define buttonUit 3     // drukknop pin Uit
+#define ledPin 13      // LED pin
+
+boolean buttonStateAan;     //variabele om de toestand van buttonStateAan te bewaren
+boolean buttonStateUit;     //variabele om de toestand van buttonStateUit te bewaren
+
+void setup() {
+  pinMode(ledPin, OUTPUT); //pin 13 instellen als uitgang
+  pinMode(buttonAan, INPUT); //pin 2 instellen als ingang
+  pinMode(buttonUit, INPUT); //pin 3 instellen als ingang
+
+  void loop() {
+    buttonStateAan = digitalRead(buttonAan); //toestand inlezen
+    buttonStateUit = digitalRead(buttonUit); //toestand inlezen
+    if (buttonStateAan == HIGH) {
+      digitalWrite(ledPin, HIGH);
+    }
+    if (buttonStateUit == HIGH) {
+      digitalWrite(ledPin, LOW);
+    }
+
+  }
 ```
 
 ## ESP8266
