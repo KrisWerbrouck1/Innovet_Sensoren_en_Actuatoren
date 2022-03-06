@@ -23,7 +23,8 @@ module.exports = {
       ],
       ['/led/', 'LED'],
       ['/relais/', 'Relais'],
-      ['/h-brug/', 'H-brug']
+      ['/h-brug/', 'H-brug'],
+      ['/servo/', 'servo']
     ],
     repo: 'https://github.com/KrisWerbrouck1/Innovet_Sensoren_en_Actuatoren.git',
     docsDir: 'docs',
