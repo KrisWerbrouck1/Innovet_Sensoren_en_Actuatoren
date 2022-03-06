@@ -37,7 +37,7 @@ void loop() {
 
 ## Leverancier
 
-Relais zijn o.a. te koop bij opencircuit [opencircuit.nl](https://opencircuit.be/product/TowerPro-SG90-9G-micro-servo-motor-180) 
+Servo's zijn o.a. te koop bij opencircuit [opencircuit.nl](https://opencircuit.be/product/TowerPro-SG90-9G-micro-servo-motor-180) 
 
 
 
