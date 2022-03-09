@@ -91,6 +91,7 @@ void setup() {
   pinMode(ledPin, OUTPUT); //pin 13 instellen als uitgang
   pinMode(buttonAan, INPUT); //pin 2 instellen als ingang
   pinMode(buttonUit, INPUT); //pin 3 instellen als ingang
+}
 
   void loop() {
     buttonStateAan = digitalRead(buttonAan); //toestand inlezen
