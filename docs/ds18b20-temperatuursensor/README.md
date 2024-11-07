@@ -17,6 +17,11 @@ DE DS18B20 is beschikbaar in TO-92 behuizing en als waterdichte sensor.
 
 Vergeet zeker de pull-up weerstand van 4,7K niet te plaatsen tussen de datapin en de voedingsspanning.
 
+Kleuren aansluitdraden:
+- massa: zwart
+- voeding: rood
+- data: geel of groen
+
 ## Voorbeeldprogramma
 
 Het voorbeeldprogramma is geschikt voor zowel de arduino UNO als voor de ESP8266.
